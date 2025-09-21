@@ -1,4 +1,4 @@
-name: Run on merged & approved PR
+name: CD Workflow
 
 on:
   pull_request:
