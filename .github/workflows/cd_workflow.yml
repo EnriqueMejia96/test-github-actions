@@ -25,7 +25,7 @@ jobs:
         uses: ./.github/actions/get-matrix-and-deploy-flag
         with:
           base_sha: ${{ github.event.pull_request.base.sha }}
-          head_sha: ${{ github.event.pull_request.merge_commit_sha }}
+          head_sha: ${{ github.event.pull_request.head.sha }}
           validate: "true"
 
       - name: Show outputs (optional)
